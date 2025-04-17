@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            height: 100px;
+            /* background-image: linear-gradient(25deg, #141e30, #243b55 50%); */
+            
+        }
+
+        nav ul {
+            display: flex;
+            height: 89px;
+            justify-content: flex-start;
+            align-items: center;
+           
+
+        }
+
+        nav ul li {
+
+            list-style: none;
+           
+            padding: 0px 100px;
+    font-size: 26px;
+  
+        }
+
+        nav ul li a {
+            color: rgb(218, 229, 239);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(226, 229, 235);
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .log {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .log img {
+            width: 88px;
+            height: 89px;
+            padding: 0 30px;
+
+        }
+
+        /* .me {
+            min-height: calc(100vh - 62px - 12vh);
+            background-color: rgba(20, 29, 24, 0.425);
+        } */
+
+        footer {
+            width: 100vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:  'Roboto Slab', serif ; 
+            /* background-image: linear-gradient(25deg, #ff512f ,  #dd2476 80%); */
+            
+        }
+
+        .coontact {
+            /* background-color: #005051; */
+            outline-color: #f2f7fc;
+    outline-offset: 0px;
+    outline-style: none;
+    outline-width: 3px;
+    color: #f2f7fc;
+    /* background-image: url("https://images.pexels.com/photos/7605539/pexels-photo-7605539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"), linear-gradient(30deg,#145665, #52a092ba); */
+     background-image: linear-gradient(25deg, #141e30, #243b55 50%); 
+     /* background-image: linear-gradient(25deg, #ff512f ,  #dd2476 80%);  */
+
+    background-position: 0px 0px, 0px 0px;
+    background-size: 100%, auto;
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, scroll;
+    
+           
+        }
+
+        .contaact {
+            min-height: calc(1000px - 100px - 30vh);
+            background-color: #005051;
+        }
+        .line
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 20vh;
+            background:#005051 ;
+           
+        }
+/* 
+        h1 {
+            max-width: 37vw;
+            margin: 67px auto  100px;
+            font-size: 64px;
+            font-family:  'Roboto Slab', serif ; 
+            color: #005051;
+            -webkit-text-stroke:0.3vw rgb(99, 35, 35) ;
+        } */
+        h1{
+            position: relative;
+            color:#005051 ;
+            -webkit-text-stroke: 0.3vw #1d6343;
+            font-size: 80px;
+            
+        }
+        h1::before{
+           
+            content: attr(data-text);
+             position: absolute;
+            top: 0;
+            left: 0;  
+            width:0 ;
+             height: 100%; 
+             color:#F99F38;
+            -webkit-text-stroke: 0vw #1d6343;
+            border-right: 2px solid #F99F38;
+            overflow: hidden;
+            white-space : nowrap;
+            animation: animate 6s linear infinite; 
+
+        }
+        @keyframes animate {
+            0% ,10% ,100%{
+                width: 0;
+            }
+            70%,90%{
+                width: 100%;
+            }
+            
+        }
+
+        .content {
+            display: grid;
+            /* grid-column: 200px 200px 200px; */
+            grid-template-columns: 200px 250px 200px;
+            /* background-color: red; */
+            margin: 10px 61px;
+            padding: 36px 414px;
+            height: 500px;
+        }
+
+        .boox1 {
+            margin:17px -248px;
+            font-size: 38px;
+            font-family:  'Roboto Slab', serif ; 
+        }
+
+        .boox2 {
+            margin: 17px 7px;
+            font-size: 38px;
+            font-family:  'Roboto Slab', serif ; 
+        }
+
+        .boox3 {
+            margin: 17px 193px;
+            font-size: 38px;
+            font-family:  'Roboto Slab', serif ; 
+        }
+
+        .boox1 h2 {
+            margin: 24px 33px;
+            font-size: 38px;
+            font-family:  'Roboto Slab', serif ; 
+        }
+
+        .boox2 h2 {
+            margin: 24px 44px;
+            font-size: 38px;
+            font-family:  'Roboto Slab', serif ;
+        }
+
+        .boox3 h2 {
+            margin: 24px 44px;
+            font-size: 38px;
+            font-family:  'Roboto Slab', serif ;
+        }
+
+        p {
+            margin: 0px 25px;
+            padding: 0px 20px;
+            font-size: 20px;
+            font-family:  'Roboto Slab', serif ;
+        }
+
+        .boox1 img {
+            margin: 8px 45px;
+        }
+
+        .boox2 img {
+            margin: 4px 39px;
+        }
+
+        .boox3 img {
+            margin: 4px 39px;
+        }
+        .face
+{
+    display: flex;
+    align-items: center;
+
+}
+.face img{
+    width: 40px;
+    padding: 0 0 0 750px;
+}
+.insta
+
+{
+    display: flex;
+    align-items: center;
+}
+.insta img
+{
+    width: 40px;
+    padding: 0 90px;
+}
+.twitter
+
+{
+    display: flex;
+    align-items: center;
+}
+.twitter img
+{
+    width: 40px;
+    padding: 0 10px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="coontact">
+        <header>
+            <nav>
+                <div class="log">
+                    <img src="log.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <div class="face">
+                    <a href="https://www.facebook.com/aaditya.jha.16547">
+                        <img src="face.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/aaditya_20251012/">
+                        <img src="insta.jfif" alt="instagram">
+                    </a>
+                </div>
+                <div class="twitter">
+                    <a href="#">
+                        <img src="twit.png" alt="twitter">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="contaact">
+            <div class="line">
+                <h1 data-text="GET IN TOUCH">GET IN TOUCH </h1>
+            </div>
+            <div class="content">
+                <div class="boox boox1">
+                    <!-- <div class="content-items">
+
+                    </div> -->
+                    <img src="address.png" width=100px height=100px alt="">
+                    <h2>Address</h2>
+                    <p>Kathmandu,Nepal</p>
+                    <p>Dhapakhel,lalitpur</p>
+                </div>
+                <div class="boox boox2">
+                    <img src="fphone.png" width=100px height=100px alt="">
+                    <h2> Phone </h2>
+                    <!-- <p>Lalitpur Branch</p> -->
+                    <p>9803501581</p>
+                </div>
+                <div class="boox boox3">
+                    <img src="emaiil.png" width=100px height=100px alt="">
+                    <h2>Email</h2>
+                    <p>mr.nobody6543210@gmail.com</p>
+                    <p>jhaaaditya12345@gmail.com</p>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; I AM ATOMIC
+
+        </footer>
+    </div>
+</body>
+
+</html>

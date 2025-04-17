@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+            height: 62px;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        nav ul li {
+
+            list-style: none;
+            padding: 0px 100px;
+            font-size: 26px;
+        }
+
+        nav ul li a {
+            color: rgb(218, 229, 239);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(226, 229, 235);
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .log {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .log img {
+            width: 88px;
+            padding: 0 30px;
+
+        }
+
+        .myproject {
+            outline-color: #f2f7fc;
+            outline-offset: 0px;
+            outline-style: none;
+            outline-width: 3px;
+            color: #f2f7fc;
+            /* background-image: url("set.jpg") , linear-gradient(30deg,#28444a, #0f4a3fba); */
+             background-image: linear-gradient(to right, #434343 0%, rgba(53, 52, 52, 0.988) 100%); 
+             /* background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);  */
+            /* background-image: linear-gradient(25deg, #bdc3c7, #2c3e50 50%); */
+
+            background-position: 0px 0px, 0px 0px;
+            background-size: 100%, auto;
+            background-repeat: no-repeat, repeat;
+            background-attachment: scroll, scroll;
+        }
+
+        .slider {
+            display: flex;
+            height: 500px;
+            /* background-color: aqua; */
+            justify-content: center;
+            /* animation: img1 3s  5 forwards;
+                animation: img2 3s  5 forwards; */
+
+        }
+
+        .img1 {
+            transform: translate(-600vw);
+            animation: img1 8s 4 4s forwards;
+
+        }
+
+        .img2 {
+            transform: translate(-500vw);
+            animation: img2 8s 4 4s forwards;
+        }
+
+        .img3 {
+            transform: translate(-300vw);
+            animation: img3 8s 4 4s forwards;
+        }
+
+        .img4 {
+            transform: translate(-150vw);
+            animation: img4 8s 4 4s forwards;
+        }
+
+        .img5 {
+            transform: translate(0vw);
+            animation: img5 8s 4 4s forwards;
+        }
+
+        .slider {
+            display: flex;
+            height: 500px;
+            /* background-color: aqua; */
+            justify-content: center;
+            /* animation: img1 3s  5 forwards;
+                animation: img2 3s  5 forwards; */
+
+        }
+
+        .img1 {
+            transform: translate(-100vw);
+            animation: img1 10s infinite 3s forwards;
+
+        }
+
+        .img2 {
+            transform: translate(10vw);
+            animation: img2 10s infinite 3s forwards;
+        }
+
+        .img3 {
+            transform: translate(-300vw);
+            animation: img3 10s infinite 3s forwards;
+        }
+
+        @keyframes img1 {
+            0% {
+                transform: translate(-100vw);
+            }
+
+            50% {
+                transform: translate(50vw);
+            }
+
+            100% {
+                transform: translate(150vw);
+            }
+        }
+
+        @keyframes img2 {
+            0% {
+                transform: translate(10vw);
+            }
+
+            50% {
+                transform: translate(150vw);
+            }
+
+            100% {
+                transform: translate(150vw);
+            }
+
+        }
+
+        @keyframes img3 {
+            0% {
+                transform: translate(-300vw);
+            }
+
+            50% {
+                transform: translate(-300vw);
+            }
+
+            100% {
+                transform: translate(-43vw);
+            }
+        }
+
+        .nameproject h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            margin: 10px;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+            outline: none;
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate {
+            0%, 18%, 20%,50.1%,60%,65.1%,80%,90.1%,92%
+            {
+                color: #0e3742;
+                text-shadow: none;
+            }
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+            {
+                color: #ffff;
+                text-shadow: 0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4,
+                0 0 160px #03bcf4;
+                
+                
+
+            }
+            
+        }
+
+        pre {
+            font-size: 26px;
+        }
+        pre:hover
+        {
+            color: rgb(2, 0, 0);
+        }
+        footer {
+            width: 100vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:  'Roboto Slab', serif ; 
+            /* background-image: linear-gradient(25deg, #ff512f ,  #dd2476 80%); */
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="myproject">
+        <header>
+            <nav>
+                <div class="log">
+                    <img src="log.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+            </nav>
+        </header>
+        <div class="slider">
+
+            <img class="img1" src="p03.png" alt="">
+            <img class="img2" src="p04.jpeg" alt="">
+            <img class="img3" src="p5.png" alt="">
+
+        </div>
+        <div class="nameproject">
+            <h1>
+                1. SMART BIN PROJECT</h1>
+            <p>
+            <pre>
+             The Proposed Smart Bin Project was devised for PRASTAB Event. 
+          In this Project, we have emanated with the use of Smart Technology for Waste
+        Management. We have Proposed a system which detects the 
+     Fill-level of Bin and once it reaches a preset threshold,
+        the responsible(Waste collectors)
+            are being notified and alarmed to vacate the bin.
+
+                    For more information  please <a href="praastav.pdf" download ="smartbin.pdf">Download</a> this
+                     
+                    
+                </pre>
+            </p>
+            <h1>2. Typing Tutor Project</h1>
+            <p>
+            <pre>
+        <!-- We made this project with C Programming Language .
+           This Project was made with the objective of discerning one's typing speed.
+                This Game like project was quite successful in its objective. 
+                    Little bit of concept of Graphics was also introduced in this project 
+                      to make us familiar with the concept of Graphics through C-Language. -->
+     This project was created using C-Language that will allow 
+         a user to check their typing skill and accuracy. 
+            Typing Tutor is a competitive typing program written on
+                C language using Dev C++ which allows user to check their 
+                    typing skill, accuracy and even keep records of their achievements.
+                        However, it is not limited to only this. A user can enter 
+                             his/her name and also view the total statistics of the user(s). 
+                                It is made user friendly with multiple user compatibility.
+
+                     For more information please <a href="typingtutor.pdf" download="typingtutor.pdf">Download</a>this
+
+
+                </pre>
+            </p>
+            <h1>3. Line Follower Robot </h1>
+            <p>
+            <pre>
+            We contrived this project in order to understand the co-relation 
+            of Hardware and Software counterparts.Arduino was used for this project and
+             IR-sensor was used to detect the lines. 
+             Ovearally, This project made us understand the use of Aeduino and its programming 
+             at basic Level.
+        
+        
+        </pre>
+            </p>
+            <H1> 4. Portfolio Demo</H1>
+            <p>
+            <pre>
+            This website is the live demonstration of my project on web development.
+            It is created with HTML and CSS Programming Language.
+
+            
+        </pre>
+            </p>
+            <h1>5. NIC Project</h1>
+            <p>
+            <pre>
+            This project is currently in development. And this the the biggest Project 
+            I have done till now. This Project was directed with an 
+            intern opportunity in National Innovation Center.
+             Further development in this project will be Updated to my fans . 
+             So, Don't worry and sit Tight !
+        </pre>
+            </p>
+
+        </div>
+        <footer>
+            Copyright &copy; I AM ATOMIC
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
